@@ -5,11 +5,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: #121212;
   color: #e0e0e0;
-  display: flex; justify-content: center; align-items: center;
-  height: 100vh; overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Animation fadeIn pour éléments */
+/* Animation fadeIn */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -26,14 +29,17 @@ body {
 }
 
 .avatar {
-  width: 100px; height: 100px; border-radius: 50%; margin-bottom: 1rem;
-  opacity: 0; animation: fadeIn 0.6s ease-out 0.3s forwards;
+  width: 100px; height: 100px;
+  border-radius: 50%; margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.3s forwards;
   border: 2px solid #333;
 }
 
 h1 {
   margin-bottom: 1rem; font-size: 1.5rem;
-  opacity: 0; animation: fadeIn 0.6s ease-out 0.5s forwards;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.5s forwards;
 }
 
 .links-list {
@@ -46,7 +52,7 @@ h1 {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Délais séquentiels */
+/* Délais séquentiels pour l'apparition */
 .links-list li:nth-child(1) { animation-delay: 0.7s; }
 .links-list li:nth-child(2) { animation-delay: 0.9s; }
 .links-list li:nth-child(3) { animation-delay: 1.1s; }
@@ -54,8 +60,7 @@ h1 {
 
 .links-list a {
   display: block; text-decoration: none;
-  background: #333;
-  color: #e0e0e0;
+  background: #333; color: #e0e0e0;
   padding: 0.75rem; border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
